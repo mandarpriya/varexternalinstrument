@@ -88,5 +88,5 @@ externalinstrument.data.frame <- function(var, instrument, dependent, p) {
   sp <- as.numeric(sqrt(s11_squared))
 
   # finally, scale the coefs (the colnames are used to reorder to the original ordering)
- return(sp * coefs[origorder])
+ return(coefs[origorder])
 }
